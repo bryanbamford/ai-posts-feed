@@ -1,0 +1,22 @@
+[
+  {
+    "date": "2025-05-11",
+    "time": "7am",
+    "content": "🧠 What if your AI could reflect on its own failures before you even saw them? Researchers at @DeepMind just introduced \"reflexion loops\" in LLM agents—enabling them to pause, review failed actions, and retry with self-generated insights. This boosted performance on complex tasks by up to 30%. It's a fascinating look into what self-correction might look like for future AI tools."
+  },
+  {
+    "date": "2025-05-11",
+    "time": "5pm",
+    "content": "🚀 Say hello to Mistral Next, the new open-weight model from @MistralAI that’s outperforming GPT-4 on several reasoning tasks. The model is 22B parameters, trained without reinforcement learning from human feedback—and it's still dominating benchmarks. This could be a huge step for open innovation in AI, especially for devs and startups building with open models."
+  },
+  {
+    "date": "2025-05-12",
+    "time": "7am",
+    "content": "🤯 Did you know @Meta’s new MEGALM-8B is beating models 10x its size on multilingual benchmarks? It’s not just small and fast—it’s incredibly smart. Meta is proving that well-trained, lean models might outcompete giant ones in the future of real-time applications."
+  },
+  {
+    "date": "2025-05-12",
+    "time": "5pm",
+    "content": "🎨 Canva just dropped its Magic Media 2.0 update—and it's not just for designers anymore. With built-in @RunwayML and @ElevenLabs integrations, users can now generate videos and voiceovers right inside the Canva UI. This could turn every marketer into a content powerhouse."
+  }
+]
