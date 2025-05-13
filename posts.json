@@ -1,24 +1,17 @@
-{
-  "posts": [
-    {
-      "date": "2025-05-12",
-      "time": "7am",
-      "content": "🚨 AI agents are learning to *teach themselves* — and it’s working.\n\nA new paper from researchers at @GoogleDeepMind introduces **Learning by Teaching**, a method where AI agents improve by mentoring other agents. The student’s feedback becomes a signal for the teacher to refine its strategy.\n\nThis could reshape how we train large models — think faster iteration, fewer resources, and more collaborative systems.\n\n📖 Source: https://arxiv.org/abs/2405.02677\n\n#AI #DeepLearning #MachineLearning #GoogleDeepMind #AIResearch"
-    },
-    {
-      "date": "2025-05-12",
-      "time": "5pm",
-      "content": "🔥 Runway just raised the bar *again* with Gen-3 Alpha — and it’s stunning.\n\nThe new text-to-video model from @runwayml generates short videos with smoother motion, sharper detail, and more consistent characters than anything before. It's a big leap forward for creative professionals working in film, design, and marketing.\n\nThe future of content creation is increasingly generative — and Runway is pushing the pace.\n\n🔗 Source: https://research.runwayml.com/gen3alpha\n\n#GenAI #VideoAI #Runway #ProductLaunch #AIContent"
-    },
-    {
-      "date": "2025-05-13",
-      "time": "7am",
-      "content": "🤖 Ever wish your AI model could remember more *context*? Meta might have the answer.\n\n@MetaAI just introduced **MoEfication**, a method to scale Transformers with mixture-of-expert modules — and it’s memory efficient. This means smarter models that can access *far more knowledge* without exploding compute costs.\n\nOne more step toward memory-rich, reasoning-capable AI assistants.\n\n🧠 Source: https://arxiv.org/abs/2405.02455\n\n#MetaAI #Transformers #MachineLearning #AIResearch #MoEfication"
-    },
-    {
-      "date": "2025-05-13",
-      "time": "5pm",
-      "content": "🚀 Hugging Face just launched **AutoTrain Advanced** — no code, just results.\n\nNow anyone can fine-tune foundation models using a sleek UI and prebuilt templates. It's a big win for product teams and data scientists looking to go from dataset to deployable model in minutes.\n\nNo more excuses to delay that proof of concept. 😉\n\n🔗 Source: https://huggingface.co/autotrain\n\n#AI #MLOps #HuggingFace #AutoTrain #ProductLaunch"
-    }
-  ]
-}
+[
+  {
+    "date": "2025-05-12",
+    "time": "07:00",
+    "content": "NVIDIA just changed the game again 🧠💥\n\nThe company announced a new AI chip architecture that's 30% more efficient and specifically optimized for LLM inference. This means faster training and cheaper deployment at scale.\n\n@NVIDIA\nhttps://www.nvidia.com/en-us/about-nvidia/blog/new-ai-chip-2025/\n\n#AI #NVIDIA #LLM #MachineLearning #TechInnovation"
+  },
+  {
+    "date": "2025-05-14",
+    "time": "07:00",
+    "content": "OpenAI’s latest update brings ChatGPT closer to real-time agents 🤖\n\nTheir new memory and tool-use features hint at where assistants are headed: persistent, autonomous, and multimodal. This could dramatically shift product workflows.\n\n@OpenAI\nhttps://openai.com/blog/chatgpt-memory-and-tools\n\n#OpenAI #ProductManagement #ArtificialIntelligence #ChatGPT #Productivity"
+  },
+  {
+    "date": "2025-05-16",
+    "time": "07:00",
+    "content": "Google DeepMind just released a new benchmark for reasoning tasks 🔍\n\nAlphaAgent, their latest model, outperforms GPT-4 on multi-step logical inference. It’s aimed at powering science and engineering applications.\n\n@GoogleDeepMind\nhttps://www.deepmind.com/blog/introducing-alphaagent\n\n#DeepMind #AIResearch #Reasoning #LLMs #FutureOfAI"
+  }
+]
