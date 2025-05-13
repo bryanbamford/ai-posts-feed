@@ -3,7 +3,7 @@ name: Auto-Update LinkedIn Posts
 on:
   schedule:
     - cron: '0 15 * * 5' # Every Friday at 7AM PST (15:00 UTC)
-  workflow_dispatch: # Also allows you to manually trigger it from GitHub if needed
+  workflow_dispatch: # Allow manual run if needed
 
 jobs:
   update-posts:
@@ -13,19 +13,32 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-
       - name: Generate new posts.json
         run: |
-          python generate_posts.py
+          cat > posts.json <<EOF
+          [
+            {
+              "date": "$(date -d 'next monday' +%Y-%m-%d)",
+              "time": "07:00",
+              "content": "🚀 Breakthrough AI innovation is accelerating how businesses deploy language models. Major players have unveiled new techniques cutting model training times by 30%.\n\n🔗 https://example.com/ai-breakthrough\n\n#AI #Innovation #ML #FutureOfWork #TechNews"
+            },
+            {
+              "date": "$(date -d 'next monday +2 days' +%Y-%m-%d)",
+              "time": "07:00",
+              "content": "🤖 Autonomous AI agents are gaining real traction across industries. New frameworks allow agents to complete multi-step tasks, reducing human intervention in daily workflows.\n\n🔗 https://example.com/ai-agents\n\n#ArtificialIntelligence #Autonomy #AIProductivity #FutureOfWork"
+            },
+            {
+              "date": "$(date -d 'next monday +4 days' +%Y-%m-%d)",
+              "time": "07:00",
+              "content": "🧠 DeepMind’s latest release shows massive improvements in AI reasoning. Their new benchmark results suggest AI could soon assist in scientific discovery at an unprecedented scale.\n\n🔗 https://example.com/deepmind-reasoning\n\n#DeepMind #AIResearch #Reasoning #FutureOfScience #TechInnovation"
+            }
+          ]
+          EOF
 
-      - name: Commit and push changes
+      - name: Commit and push posts.json
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add posts.json
           git commit -m "Auto-update posts.json with new LinkedIn posts [skip ci]" || echo "No changes to commit"
           git push
